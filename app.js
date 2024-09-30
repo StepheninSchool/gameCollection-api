@@ -1,5 +1,5 @@
 import express from 'express';
-import gamesRouter from './Routes/gamesRoute.js';
+import gamesRoute from './routes/games.js';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -12,8 +12,9 @@ app.use(express.static('public'));
 
 // Routes
 
-app.use('/api/games', gamesRouter);
+app.use('/api/games', gamesRoute);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
