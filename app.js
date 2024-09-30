@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 // Routes
 
-app.use('/api/games', gamesRoute);
+app.use('/api', gamesRoute);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

@@ -21,7 +21,6 @@ model Game {
   developer   String?
   publisher   String? // ? makes nullable or optional
   releaseDate String?
-  image       String?
   completed   Boolean
   filename    String
   createdAt   DateTime @default(now())
