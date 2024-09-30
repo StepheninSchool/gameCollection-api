@@ -65,7 +65,7 @@ router.post('/add', upload.single('image'), async (req, res) => {
   const filename = req.file ? req.file.filename : null;
 
   //ensure 'completed' is a boolean value
-  const completedBool = completed === "true"; 
+  const completedBool = completed === true; 
 
   // to-do: validate proper publisher, developer etc
 
@@ -76,7 +76,7 @@ router.post('/add', upload.single('image'), async (req, res) => {
       developer: developer,
       publisher: publisher, 
       releaseDate: releaseDate,
-      completed: completed,
+      completed: completedBool,
       filename: filename, 
 
     }
