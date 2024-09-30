@@ -28,6 +28,7 @@ const prisma = new PrismaClient({
 });
 
 // Regex patterns for validation
+//SOURCE: used chatGPT to provided me with regex patterns for validation.
 const releaseDatePattern = /^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])-(\d{4})$/; // mm-dd-yyyy format
 const titlePattern = /^[a-zA-Z0-9\s]{1,100}$/; // Title: 1-100 alphanumeric characters
 const descriptionPattern = /^[\s\S]{1,500}$/; // Description: 1-500 characters
